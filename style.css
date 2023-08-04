@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(243, 246, 36, 0.411);
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.grid-container {
+    border: 10px solid #1E90FF;
+}
+
+
+/* rgb(0, 195, 255) */
+
+.square {
+    cursor: pointer;
+    border: 1px solid rgba(145, 136, 136, 0.527);
+    padding: 0px;
+}
+
+
