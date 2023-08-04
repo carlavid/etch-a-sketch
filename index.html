@@ -12,8 +12,20 @@
         <header>
             <h1 class="heading">Etch-a-sketch</h1>
         </header>
-        <div class="grid-container" id="grid-container">
-
+        <div class="content-container">
+            <div class="input-container">
+                <div class="size-container">
+                    <label for="rangeInput">Size:</label>
+                    <input type="range" id="rangeInput" min="1" max="100" value="0" class="slider" oninput="amount.value=rangeInput.value">
+                    <output id="amount" name="amount" for="rangeInput">0</output>
+                </div>
+                <div class="color-container">
+                    <label for="favcolor">Color:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#1E90FF">
+                </div>
+                <button class="button">Reset</button>
+            </div>
+            <div class="grid-container" id="grid-container"></div>
         </div>
         <script src="script.js"></script>
     </body>
