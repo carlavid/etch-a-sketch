@@ -2,7 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(243, 246, 36, 0.411);
+    background: linear-gradient(rgb(146, 247, 245), rgba(243, 246, 36, 0.411));
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
@@ -16,9 +17,9 @@ body {
 }
 
 .grid-container {
-    position: relative;
-    border: 10px solid #1E90FF;
+    border: 10px solid #2bdaea;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 500px;
     width: 500px
 }
@@ -32,20 +33,19 @@ body {
 .content-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
     gap: 50px;
 }
 
 .input-container {
-    background-color: #1e8fff57;
+    width: 250px;
+    background-color: #ffffff57;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
     font-family: 'Shadows Into Light', cursive;
     font-size: 30px;
 }
@@ -56,11 +56,28 @@ body {
 
 .button {
     font-family: 'Shadows Into Light', cursive;
-    background-color: rgba(255, 255, 255, 0.317);
+    background-color: rgb(146, 247, 245);
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: 20px;
     border: 2px solid black;
     padding: 10px;
     margin: 10px 5px;
 }
 
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px #666;
+}
+
+.button:active {
+    background-color: rgb(45, 131, 130);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input[type="range"] {
+    accent-color: #2bdaea;
+    cursor: pointer;
+    width: 50%;
+}
